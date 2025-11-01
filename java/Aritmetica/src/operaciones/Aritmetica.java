@@ -4,6 +4,20 @@ public class Aritmetica {
     //atributos de la clase
     int a;
     int b;
+
+
+    //el constructor es un metodo especial
+    public Aritmetica(){
+        System.out.println("se esta ejecutando el constructor 1");
+    }
+    //sobre carga de constructores
+    public Aritmetica(int a, int b){
+        this.a = a;
+        this.b = b;
+        System.out.println("se esta ejecutando el constructor 2");
+    }
+
+
     //metodo
     public void suma(){
         int resultado = a + b;
