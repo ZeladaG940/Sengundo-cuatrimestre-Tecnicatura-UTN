@@ -24,7 +24,7 @@ public class PruebasAritmetica {
         //nuevo objeto
         Aritmetica operacion2 = new Aritmetica(8,2);
         System.out.println("aritmetica a: "+operacion2.a);
-        System.out.println("aritmetica b: "+operacion2.b);}
+        System.out.println("aritmetica b: "+operacion2.b);
     }
 
 }
