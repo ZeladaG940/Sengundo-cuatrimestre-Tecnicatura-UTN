@@ -1,17 +1,17 @@
-package operaciones;
+package aritmeticas;
 
-public class Aritmetica {
+public class Aritmeticas {
     //atributos de la clase
     int a;
     int b;
 
 
     //el constructor es un metodo especial
-    public Aritmetica(){
+    public Aritmeticas(){
         System.out.println("se esta ejecutando el constructor 1");
     }
     //sobre carga de constructores
-    public Aritmetica(int a, int b){
+    public Aritmeticas(int a, int b){
         this.a = a;
         this.b = b;
         System.out.println("se esta ejecutando el constructor 2");

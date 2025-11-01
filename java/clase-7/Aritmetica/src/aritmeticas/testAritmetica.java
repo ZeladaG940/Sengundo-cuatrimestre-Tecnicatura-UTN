@@ -1,10 +1,10 @@
-package operaciones;
+package aritmeticas;
 
-public class PruebasAritmetica {
+public class testAritmetica {
     public static void main(String[] args) {
         int a = 10;//variables locales
         int b = 5;
-        Aritmetica operacion = new Aritmetica();
+        Aritmeticas operacion = new Aritmeticas();
         //agregando valores
         operacion.a = 3;
         operacion.b = 5;
@@ -22,7 +22,7 @@ public class PruebasAritmetica {
         System.out.println("aritmetica b: "+operacion.b);
 
         //nuevo objeto
-        Aritmetica operacion2 = new Aritmetica(8,2);
+        Aritmeticas operacion2 = new Aritmeticas(8,2);
         System.out.println("aritmetica a: "+operacion2.a);
         System.out.println("aritmetica b: "+operacion2.b);
 
@@ -41,8 +41,20 @@ class Persona{
     String apellido;
 
     Persona(String nombre, String apellido){
+        super();//llama al constructor de la clase padre
         this.nombre = nombre;
         this.apellido = apellido;
+        System.out.println("objeto persona usando el this" + this);
+    }
+}
+class Imprimir{
+    public Imprimir(){
+        super();//el constructor de la clase padre, para reserva memoria
+
+    }
+    public void imprimir(Persona persona){
+        System.out.println("prueba desde la clase imprimir: " + persona);
+        System.out.println("impricion del objeto this" + this);
     }
 }
 
